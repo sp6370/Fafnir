@@ -1,2 +1,2 @@
 # Fafnir
-A minimalistic key-value database implemented in Python.
+A minimalistic key-value database implemented in C.
