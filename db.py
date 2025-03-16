@@ -1,3 +1,5 @@
+import sys
+
 DATA_FILE_PATH = "data.txt" # assume file will always exist
 RECORD_ITEM_SIZE = 8
 RECORD_SIZE = 18
@@ -61,11 +63,22 @@ def get(key):
 
 
 if __name__ == '__main__':
-    set("a", "1")
-    set("b", "2")
-    set("c", "3")
-    set("b", "100")
-    set("d", "200")
-    set("a", "123")
-    get("a")
-    get("z")
+    # set("a", "1")
+    # set("b", "2")
+    # set("c", "3")
+    # set("b", "100")
+    # set("d", "200")
+    # set("a", "123")
+    # get("a")
+    # get("z")
+
+    if len(sys.argv) == 4:
+        key = sys.argv[2]
+        value = sys.argv[3]
+        set(key, value)
+    elif len(sys.argv) == 3:
+        key = sys.argv[2]
+        result = get(key)
+        print(result)
+    else:
+        print("ERROR!!!")
