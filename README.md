@@ -1,5 +1,5 @@
 # Fafnir
-A minimalistic key-value database implemented in C.
+A minimalistic key-value database implemented in Python.
 
 ### Database Assumptions
 
